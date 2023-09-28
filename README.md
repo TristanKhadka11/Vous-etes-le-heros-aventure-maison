@@ -6,4 +6,6 @@
 
 **Inspiration:** [Maison Monstre](https://www.imdb.com/title/tt0385880/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_maison%2520mon) 
 
+**Palette de couleurs:** [coolors.co](https://coolors.co/000000-a40505-ffffff) 
+
 
