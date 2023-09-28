@@ -8,4 +8,8 @@
 
 **Palette de couleurs:** [coolors.co](https://coolors.co/000000-a40505-ffffff) 
 
+![shema](https://github.com/TristanKhadka11/Vous-etes-le-heros-aventure-maison/blob/main/01_assets/schema.png)
+
+
+
 
