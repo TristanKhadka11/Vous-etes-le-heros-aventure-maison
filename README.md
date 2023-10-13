@@ -1,4 +1,4 @@
-![titre](https://github.com/TristanKhadka11/Vous-etes-le-heros-aventure-maison/blob/main/01_assets/img/titre.png)
+![titre](https://github.com/TristanKhadka11/Vous-etes-le-heros-aventure-maison/blob/main/assets/img/titre.png)
 
 [Développement web - Projet vous êtes le héros](https://smnarnold.com/projets/vous-etes-le-heros)
 
@@ -8,7 +8,7 @@
 
 **Palette de couleurs:** [coolors.co](https://coolors.co/000000-a40505-ffffff) 
 
-![shema](https://github.com/TristanKhadka11/Vous-etes-le-heros-aventure-maison/blob/main/01_assets/img/schema.png)
+![shema](https://github.com/TristanKhadka11/Vous-etes-le-heros-aventure-maison/blob/main/assets/img/schema.png)
 
 
 
