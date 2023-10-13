@@ -1,166 +1,88 @@
 * {
-
     margin: 0;
-
 }
 
-
-
 body {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     min-height: 100vh;
-
     background-color: black;
-
 }
 
 
 h1 {
-
     font-family: 'Creepster', cursive;
-
-
     font-size: 20px;
-
     max-width: 100%;
-
     color: white;
-
     padding: 10px;
-
 }
 
 
 p {
-
     font-family: 'Helvetica';
-
     font-size: 20px;
-
     max-width: 100%;
-
     color: white;
-
     padding: 10px;
-
 }
 
 .image {
-
     max-width: 100%;
-
 }
-
-
-
-
 
 .conteneur {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     width: 100%;
-
 }
-
 
 
 .jeu {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
-
     background-color: black;
-
     padding: 20px;
-
     max-width: 900px;
-
     min-width: 400px;
-
     min-height: 100px;
-
 }
-
-
 
 .titre {
-
     font-family: 'Creepster', cursive;
-
     font-size: 80px;
-
     max-width: 100%;
-
     color: #A40505;
-
     padding: 10px;
-
 }
-
 
 .interaction {
-
     display: flex;
-
     flex-direction: row;
-
     justify-content: space-between;
-
     align-items: center;
-
     height: 30px;
-
     width: 100%;
-
     margin-top: 20px;
-
 }
-
-
 
 button {
-
     border-radius: 5px;
-
     border: 5px solid #A40505;
-
     background-color: black;
-
     color: #A40505;
-
     font-family: 'Creepster', cursive;
-
     font-size: 15px;
-
     padding: 10px 20px;
-
 }
 
-
-
 button:hover {
-
     background-color: #A40505;
-
     color: white;
-
     border-radius: 10px;
-
     border: 5px solid white
 }
