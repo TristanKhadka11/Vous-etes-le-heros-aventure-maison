@@ -262,7 +262,7 @@ function updateChapterContent(chapterKey) {
         buttonContainer.appendChild(newButton);
     });
 
-    if (chapterKey === "maison") {
+    if (chapterKey === "cle") {
         twist = true;
     }
 }
