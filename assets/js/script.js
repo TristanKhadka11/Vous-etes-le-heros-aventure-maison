@@ -186,7 +186,7 @@ function updateChapterContent(chapterKey) {
     });
 
     if (chapterKey === "maison") {
-        twist = true; // C'est ici que vous modifiez la twist
+        twist = true; 
     }
 }
 
