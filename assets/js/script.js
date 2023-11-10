@@ -46,8 +46,8 @@ const chapters = {
         image: "",
         video: "./assets/video/videoracine.mp4",
         son: "./assets/son/racinne.mp3",
-        son1: "",
-        son2: "",
+        son1: "./assets/son/menscream.mp3",
+        son2: "./assets/son/wind.mp3",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -61,7 +61,7 @@ const chapters = {
         video: "",
         son: "",
         son1: "./assets/son/door.mp3",
-        son2: "",
+        son2: "./assets/son/knock.mp3",
         boutons: [{
                 titre: "Entrer en utilisant un briquet",
                 destination: "briquet"
@@ -83,7 +83,7 @@ const chapters = {
         image: "./assets/img/porte.PNG",
         video: "",
         son: "./assets/son/door.mp3",
-        son1: "",
+        son1: "./assets/son/doorbell.mp3",
         son2: "",
         boutons: [{
                 titre: "Entrer en utilisant une lumière",
@@ -105,9 +105,9 @@ const chapters = {
         description: "Vous entrez sans précaution. Un trou dans le sol se trouve à l'entrée du plancher, vous tombez et mourez de chute.",
         image: "./assets/img/tomber2.PNG",
         video: "",
-        son: "",
-        son1: "",
-        son2: "",
+        son: "./assets/son/atmo6.mp3",
+        son1: "./assets/son/screamecho.mp3",
+        son2: "./assets/son/bodyfall.mp3",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -119,9 +119,9 @@ const chapters = {
         description: "Vous entrez en esquivant un trou qui est à l'entrée du plancher. La porte se referme derrière vous. (Les cris s'intensifient)",
         image: "./assets/img/sousol.PNG",
         video: "",
-        son: "",
-        son1: "",
-        son2: "",
+        son: "./assets/son/breating.mp3",
+        son1: "./assets/son/wood1.mp3",
+        son2: "./assets/son/slam.mp3",
         boutons: [{
                 titre: "Descendre les escaliers",
                 destination: "escaliers"
