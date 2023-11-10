@@ -3,6 +3,10 @@ const chapters = {
         titre: "AVENTURE MAISON",
         description: "Vous jouez avec votre meilleur ami Judy au basketball. Une journée comme les autres...",
         image: "./assets/img/basketball.PNG",
+        video: "",
+        son: "./assets/son/basketball.mp3",
+        son1: "./assets/son/atmo5.mp3",
+        son2: "",
         boutons: [{
             titre: "Commencer",
             destination: "rue"
@@ -13,6 +17,10 @@ const chapters = {
         titre: "BRUIT INATTENDU",
         description: "Soudain, vous entendez un cri provenant de la maison voisine d'en face.",
         image: "./assets/img/maison_monstre_sanstitre.webp",
+        video: "",
+        son: "./assets/son/outside.mp3",
+        son1: "./assets/son/atmo3.mp3",
+        son2: "./assets/son/scream.mp3",
         boutons: [{
                 titre: "Coup d'œil par le gazon",
                 destination: "gazon"
@@ -35,7 +43,11 @@ const chapters = {
     gazon: {
         titre: "REGARDEZ OÙ VOUS MARCHEZ",
         description: "Une racine vous agrippe le pied et vous mourez enseveli sous la terre.",
-        image: "./assets/img/racine2.PNG",
+        image: "",
+        video: "./assets/video/videoracine.mp4",
+        son: "./assets/son/racinne.mp3",
+        son1: "",
+        son2: "",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -46,6 +58,10 @@ const chapters = {
         titre: "LA PORTE ?",
         description: "Vous décidez de cogner. La porte s'ouvre d'elle-même et vous remarquez qu'il fait sombre à l'intérieur.",
         image: "./assets/img/porte.PNG",
+        video: "",
+        son: "",
+        son1: "./assets/son/door.mp3",
+        son2: "",
         boutons: [{
                 titre: "Entrer en utilisant un briquet",
                 destination: "briquet"
@@ -65,6 +81,10 @@ const chapters = {
         titre: "LA PORTE ?",
         description: "Vous décidez de sonner. La porte s'ouvre d'elle-même et vous remarquez qu'il fait sombre à l'intérieur.",
         image: "./assets/img/porte.PNG",
+        video: "",
+        son: "./assets/son/door.mp3",
+        son1: "",
+        son2: "",
         boutons: [{
                 titre: "Entrer en utilisant une lumière",
                 destination: "briquet"
@@ -84,6 +104,10 @@ const chapters = {
         titre: "IL FAIT SOMBRE !",
         description: "Vous entrez sans précaution. Un trou dans le sol se trouve à l'entrée du plancher, vous tombez et mourez de chute.",
         image: "./assets/img/tomber2.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -94,6 +118,10 @@ const chapters = {
         titre: "DANS LA GUEULE DU LOUP",
         description: "Vous entrez en esquivant un trou qui est à l'entrée du plancher. La porte se referme derrière vous. (Les cris s'intensifient)",
         image: "./assets/img/sousol.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
                 titre: "Descendre les escaliers",
                 destination: "escaliers"
@@ -117,6 +145,10 @@ const chapters = {
         titre: "CHUTT !",
         description: "La maison vous lance des pieux et vous tue.",
         image: "./assets/img/maison.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -127,6 +159,10 @@ const chapters = {
         titre: "TROUVÉ !",
         description: "Le voisin se trouvait derrière vous. Vous descendez plus vite pour le fuir.",
         image: "./assets/img/monter.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
                 titre: "Continuer",
                 destination: "hall"
@@ -142,6 +178,10 @@ const chapters = {
         titre: "C'EST MIEUX QUE RIEN",
         description: "Vous trouvez une clé sur une étagère, ce sera peut-être utile. Le voisin marche derrière vous et vous prenez les escaliers pour le fuir.",
         image: "./assets/img/cle.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
                 titre: "Continuer",
                 destination: "hall"
@@ -157,6 +197,10 @@ const chapters = {
         titre: "DEUX CHOIX",
         description: "Vous pensez avoir fui le voisin. Deux portes se trouvent devant vous.",
         image: "./assets/img/2portes.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
                 titre: "Porte de droite",
                 destination: "portedroite"
@@ -176,6 +220,10 @@ const chapters = {
         titre: "ÇA PUE",
         description: "Vous ouvrez la porte et un gaz toxique sort de la pièce et vous tue.",
         image: "./assets/img/gas.jpg",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -186,6 +234,10 @@ const chapters = {
         titre: "",
         description: "Vous ouvrez la porte et une fille se trouve dans une cage. Avez-vous la clé pour la sortir ?",
         image: "./assets/img/cadenat.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
                 titre: "Oui",
                 destination: "fin"
@@ -205,6 +257,10 @@ const chapters = {
         titre: "BRAVO !",
         description: "Vous avez sauvé la fille en entrant dans la cage pour l'aider. La porte se referme contre vous...",
         image: "./assets/img/IMG_6547.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -215,6 +271,10 @@ const chapters = {
         titre: "PAS ASSEZ VITE !",
         description: "Le voisin de la maison vous a trouvé. Il vous attrape et vous tue.",
         image: "./assets/img/IMG_6557.PNG",
+        video: "",
+        son: "",
+        son1: "",
+        son2: "",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -234,6 +294,8 @@ function goToChapter(chapterCle) {
     chapter.boutons.forEach((bouton) => {
         console.log(bouton.titre + " (Destination : " + bouton.destination + ")");
     });
+
+    updateChapterContent(chapterCle);
 }
 
 let twist = false;
@@ -249,6 +311,12 @@ function updateChapterContent(chapterKey) {
     document.getElementById('chapterTitle').textContent = chapter.titre;
     document.getElementById('chapterDescription').textContent = chapter.description;
     document.getElementById('chapterImage').src = chapter.image;
+    document.getElementById('chapterVideo').src = chapter.video;
+
+        document.getElementById('chapterSon').src = chapter.son;
+        document.getElementById('chapterSon2').src = chapter.son1;
+        document.getElementById('chapterSon3').src = chapter.son2;
+    
 
     const buttonContainer = document.getElementById('buttonContainer');
     buttonContainer.innerHTML = '';
@@ -258,6 +326,11 @@ function updateChapterContent(chapterKey) {
         newButton.textContent = bouton.titre;
         newButton.addEventListener('click', () => {
             goToChapter(bouton.destination);
+
+      
+            
+
+      
         });
         buttonContainer.appendChild(newButton);
     });
@@ -267,8 +340,5 @@ function updateChapterContent(chapterKey) {
     }
 }
 
-function goToChapter(chapterKey) {
-    updateChapterContent(chapterKey);
-}
 
 updateChapterContent("menu");
