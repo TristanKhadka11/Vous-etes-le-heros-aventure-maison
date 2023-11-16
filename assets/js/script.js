@@ -22,21 +22,24 @@ const chapters = {
         son1: "./assets/son/atmo3.mp3",
         son2: "./assets/son/scream.mp3",
         boutons: [{
-                titre: "Coup d'œil par le gazon",
-                destination: "gazon"
-            },
-            {
-                titre: "Cogner à la porte",
-                destination: "porte1"
-            },
-            {
-                titre: "Sonner à la porte",
-                destination: "porte2"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Coup d'œil par le gazon",
+            destination: "gazon"
+        },
+        {
+            titre: "Cogner à la porte",
+            destination: "porte1"
+        },
+        {
+            titre: "Sonner à la porte",
+            destination: "porte2"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        },
+
+
+
         ]
     },
 
@@ -63,17 +66,17 @@ const chapters = {
         son1: "./assets/son/door.mp3",
         son2: "./assets/son/knock.mp3",
         boutons: [{
-                titre: "Entrer en utilisant un briquet",
-                destination: "briquet"
-            },
-            {
-                titre: "Entrer sans précaution",
-                destination: "sansbriquet"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Entrer en utilisant un briquet",
+            destination: "briquet"
+        },
+        {
+            titre: "Entrer sans précaution",
+            destination: "sansbriquet"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        }
         ]
     },
 
@@ -86,17 +89,17 @@ const chapters = {
         son1: "./assets/son/doorbell.mp3",
         son2: "",
         boutons: [{
-                titre: "Entrer en utilisant une lumière",
-                destination: "briquet"
-            },
-            {
-                titre: "Entrer sans précaution",
-                destination: "sansbriquet"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Entrer en utilisant une lumière",
+            destination: "briquet"
+        },
+        {
+            titre: "Entrer sans précaution",
+            destination: "sansbriquet"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        }
         ]
     },
 
@@ -123,21 +126,21 @@ const chapters = {
         son1: "./assets/son/wood1.mp3",
         son2: "./assets/son/slam.mp3",
         boutons: [{
-                titre: "Descendre les escaliers",
-                destination: "escaliers"
-            },
-            {
-                titre: "Prendre une clé sur une étagère",
-                destination: "cle"
-            },
-            {
-                titre: "Crier pour que la personne indique où elle se trouve",
-                destination: "crier"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Descendre les escaliers",
+            destination: "escaliers"
+        },
+        {
+            titre: "Prendre une clé sur une étagère",
+            destination: "cle"
+        },
+        {
+            titre: "Crier pour que la personne indique où elle se trouve",
+            destination: "crier"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        }
         ]
     },
 
@@ -164,13 +167,13 @@ const chapters = {
         son1: "",
         son2: "",
         boutons: [{
-                titre: "Continuer",
-                destination: "hall"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Continuer",
+            destination: "hall"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        }
         ]
     },
 
@@ -183,13 +186,13 @@ const chapters = {
         son1: "./assets/son/key.mp3",
         son2: "",
         boutons: [{
-                titre: "Continuer",
-                destination: "hall"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Continuer",
+            destination: "hall"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        }
         ]
     },
 
@@ -202,17 +205,17 @@ const chapters = {
         son1: "",
         son2: "",
         boutons: [{
-                titre: "Porte de droite",
-                destination: "portedroite"
-            },
-            {
-                titre: "Porte de gauche",
-                destination: "portegauche"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Porte de droite",
+            destination: "portedroite"
+        },
+        {
+            titre: "Porte de gauche",
+            destination: "portegauche"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        }
         ]
     },
 
@@ -239,17 +242,17 @@ const chapters = {
         son1: "./assets/son/wind.mp3",
         son2: "",
         boutons: [{
-                titre: "Oui",
-                destination: "fin"
-            },
-            {
-                titre: "Non",
-                destination: "sanscle"
-            },
-            {
-                titre: "Recommencer",
-                destination: "menu"
-            }
+            titre: "Oui",
+            destination: "fin"
+        },
+        {
+            titre: "Non",
+            destination: "sanscle"
+        },
+        {
+            titre: "Recommencer",
+            destination: "menu"
+        }
         ]
     },
 
@@ -282,22 +285,6 @@ const chapters = {
     },
 };
 
-function goToChapter(chapterCle) {
-    const chapter = chapters[chapterCle];
-
-    if (!chapter) {
-        console.error("Le chapitre n'existe pas.");
-        return;
-    }
-
-
-    chapter.boutons.forEach((bouton) => {
-        console.log(bouton.titre + " (Destination : " + bouton.destination + ")");
-    });
-
-    updateChapterContent(chapterCle);
-}
-
 let twist = false;
 
 function updateChapterContent(chapterKey) {
@@ -313,10 +300,10 @@ function updateChapterContent(chapterKey) {
     document.getElementById('chapterImage').src = chapter.image;
     document.getElementById('chapterVideo').src = chapter.video;
 
-        document.getElementById('chapterSon').src = chapter.son;
-        document.getElementById('chapterSon2').src = chapter.son1;
-        document.getElementById('chapterSon3').src = chapter.son2;
-    
+    document.getElementById('chapterSon').src = chapter.son;
+    document.getElementById('chapterSon2').src = chapter.son1;
+    document.getElementById('chapterSon3').src = chapter.son2;
+
 
     const buttonContainer = document.getElementById('buttonContainer');
     buttonContainer.innerHTML = '';
@@ -327,10 +314,10 @@ function updateChapterContent(chapterKey) {
         newButton.addEventListener('click', () => {
             goToChapter(bouton.destination);
 
-      
-            
 
-      
+
+
+
         });
         buttonContainer.appendChild(newButton);
     });
@@ -340,5 +327,61 @@ function updateChapterContent(chapterKey) {
     }
 }
 
+function Sauvgarde(chapterKey, twistActivated) {
+    localStorage.setItem('currentChapter', chapterKey);
+    localStorage.setItem('twistActivated', twistActivated);
+}
+
+
+function Charger() {
+    const currentChapter = localStorage.getItem('currentChapter');
+    const twistActivated = localStorage.getItem('twistActivated');
+
+    if (currentChapter) {
+        updateChapterContent(currentChapter);
+    }
+
+    if (twistActivated === 'true') {
+        twist = true;
+    }
+}
+
+
+function reset() {
+    localStorage.removeItem('currentChapter');
+    localStorage.removeItem('twistActivated');
+    updateChapterContent('menu');
+}
+
+
+function goToChapter(chapterKey) {
+    const chapter = chapters[chapterKey];
+
+    if (!chapter) {
+        console.error("Le chapitre n'existe pas.");
+        return;
+    }
+
+    chapter.boutons.forEach((bouton) => {
+        console.log(bouton.titre + " (Destination : " + bouton.destination + ")");
+    });
+
+    Sauvgarde(chapterKey, twist);
+    updateChapterContent(chapterKey);
+}
+
+document.getElementById('resetButton').addEventListener('click', reset);
+
+window.addEventListener('load', Charger);
+
+window.addEventListener('beforeunload', () => {
+    Sauvgarde(currentChapter, twist);
+});
 
 updateChapterContent("menu");
+
+
+
+
+
+
