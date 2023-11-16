@@ -313,11 +313,6 @@ function updateChapterContent(chapterKey) {
         newButton.textContent = bouton.titre;
         newButton.addEventListener('click', () => {
             goToChapter(bouton.destination);
-
-
-
-
-
         });
         buttonContainer.appendChild(newButton);
     });
@@ -345,7 +340,6 @@ function Charger() {
         twist = true;
     }
 }
-
 
 function reset() {
     localStorage.removeItem('currentChapter');
