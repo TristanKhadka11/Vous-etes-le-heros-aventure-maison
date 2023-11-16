@@ -146,9 +146,9 @@ const chapters = {
         description: "La maison vous lance des pieux et vous tue.",
         image: "./assets/img/maison.PNG",
         video: "",
-        son: "",
-        son1: "",
-        son2: "",
+        son: "./assets/son/wind.mp3",
+        son1: "./assets/son/menscream.mp3",
+        son2: "./assets/son/pieu.mp3",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -160,7 +160,7 @@ const chapters = {
         description: "Le voisin se trouvait derrière vous. Vous descendez plus vite pour le fuir.",
         image: "./assets/img/monter.PNG",
         video: "",
-        son: "",
+        son: "./assets/son/stairs.mp3",
         son1: "",
         son2: "",
         boutons: [{
@@ -179,8 +179,8 @@ const chapters = {
         description: "Vous trouvez une clé sur une étagère, ce sera peut-être utile. Le voisin marche derrière vous et vous prenez les escaliers pour le fuir.",
         image: "./assets/img/cle.PNG",
         video: "",
-        son: "",
-        son1: "",
+        son: "./assets/son/atmo7.mp3",
+        son1: "./assets/son/key.mp3",
         son2: "",
         boutons: [{
                 titre: "Continuer",
@@ -198,7 +198,7 @@ const chapters = {
         description: "Vous pensez avoir fui le voisin. Deux portes se trouvent devant vous.",
         image: "./assets/img/2portes.PNG",
         video: "",
-        son: "",
+        son: "./assets/son/wood1.mp3",
         son1: "",
         son2: "",
         boutons: [{
@@ -221,8 +221,8 @@ const chapters = {
         description: "Vous ouvrez la porte et un gaz toxique sort de la pièce et vous tue.",
         image: "./assets/img/gas.jpg",
         video: "",
-        son: "",
-        son1: "",
+        son: "./assets/son/gas.mp3",
+        son1: "./assets/son/cough.mp3",
         son2: "",
         boutons: [{
             titre: "Recommencer",
@@ -235,8 +235,8 @@ const chapters = {
         description: "Vous ouvrez la porte et une fille se trouve dans une cage. Avez-vous la clé pour la sortir ?",
         image: "./assets/img/cadenat.PNG",
         video: "",
-        son: "",
-        son1: "",
+        son: "./assets/son/atmo4.mp3",
+        son1: "./assets/son/wind.mp3",
         son2: "",
         boutons: [{
                 titre: "Oui",
@@ -258,9 +258,9 @@ const chapters = {
         description: "Vous avez sauvé la fille en entrant dans la cage pour l'aider. La porte se referme contre vous...",
         image: "./assets/img/IMG_6547.PNG",
         video: "",
-        son: "",
-        son1: "",
-        son2: "",
+        son: "./assets/son/atmo3.mp3",
+        son1: "./assets/son/locker.mp3",
+        son2: "./assets/son/slam.mp3",
         boutons: [{
             titre: "Recommencer",
             destination: "menu"
@@ -270,10 +270,10 @@ const chapters = {
     sanscle: {
         titre: "PAS ASSEZ VITE !",
         description: "Le voisin de la maison vous a trouvé. Il vous attrape et vous tue.",
-        image: "./assets/img/IMG_6557.PNG",
-        video: "",
-        son: "",
-        son1: "",
+        image: "",
+        video: "./assets/video/videovoisin.mp4",
+        son: "./assets/son/atmo1.mp3",
+        son1: "./assets/son/breating.mp3",
         son2: "",
         boutons: [{
             titre: "Recommencer",
