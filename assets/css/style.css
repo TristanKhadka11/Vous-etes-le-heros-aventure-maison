@@ -29,7 +29,13 @@ p {
 }
 
 .image {
+    max-width: 80%;
+    z-index: 0;
+}
+
+#chapterVideo {
     max-width: 100%;
+    z-index: 0;
 }
 
 .conteneur {
@@ -37,6 +43,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 
@@ -50,6 +57,7 @@ p {
     max-width: 900px;
     min-width: 400px;
     min-height: 100px;
+
 }
 
 .titre {
@@ -67,7 +75,7 @@ p {
     align-items: center;
     height: 30px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 button {
@@ -86,4 +94,139 @@ button:hover {
     color: white;
     border-radius: 10px;
     border: 5px solid white
+}
+
+#buttonContainer {
+    margin-top: -100px;
+    z-index: 1;
+}
+
+#resetButton {
+    border-radius: 5px;
+    border: 5px solid #A40505;
+    background-color: black;
+    color: #A40505;
+    font-family: 'Creepster', cursive;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-bottom: px;
+    margin-right: 0px;
+    position: fixed;
+    top: 10px;
+    right: 80px;
+    z-index: 2;
+
+}
+
+#resetButton:hover {
+    background-color: #A40505;
+    color: white;
+    border-radius: 10px;
+    border: 5px solid white
+}
+
+/* Ajouter ces styles pour la checkbox */
+.mute-container {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 2;
+}
+
+.mute-label {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mute-label img {
+    margin-left: 5px;
+    width: 45px;
+    /* Ajustez la largeur selon vos besoins */
+    height: 45px;
+    /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Ajoutez ces lignes dans votre code CSS */
+
+/* Ajoutez cette classe pour masquer l'image du son désactivé */
+.volume-icon.hidden {
+    display: none;
+}
+
+
+/* Styles pour l'icône de volume activé */
+.mute-label .fa-volume-up {
+    display: inline;
+}
+
+/* Styles pour l'icône de volume désactivé */
+#muteCheckbox:checked+.fa-volume-up {
+    display: none;
+}
+
+#muteCheckbox:checked+.fa-volume-mute {
+    display: inline;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+        background-color: #A40505;
+    }
+
+    .titre {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+    }
+
+    h1 {
+
+        color: rgb(0, 0, 0);
+
+    }
+
+
+
+    p {
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .jeu {
+        padding: 10px;
+        background-color: #A40505;
+    }
+
+    .interaction {
+        height: auto;
+        flex-direction: column;
+    }
+
+    button {
+        background-color: #A40505;
+        border: 5px solid black;
+        color: black;
+        font-size: 25px;
+        padding: 8px 16px;
+    }
+
+    #buttonContainer {
+        margin-top: 0;
+    }
+
+    #resetButton {
+        background-color: #A40505;
+        border: 5px solid black;
+        color: black;
+        font-size: 14px;
+        padding: 8px 16px;
+        right: 20px;
+    }
 }

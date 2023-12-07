@@ -372,7 +372,73 @@ window.addEventListener('beforeunload', () => {
     Sauvgarde(currentChapter, twist);
 });
 
+// Ajoutez ces lignes dans votre code JavaScript
+const muteCheckbox = document.getElementById('muteCheckbox');
+const volumeUpIcon = document.getElementById('volumeUpIcon');
+const volumeMuteIcon = document.getElementById('volumeMuteIcon');
+const chapterSon = document.getElementById('chapterSon');
+const chapterSon2 = document.getElementById('chapterSon2');
+const chapterSon3 = document.getElementById('chapterSon3');
+
+// Écoutez le changement d'état de la checkbox mute
+muteCheckbox.addEventListener('change', toggleMute);
+
+// Mettez à jour le statut du mute lors du changement d'état de la checkbox
+function toggleMute() {
+    const isMuted = muteCheckbox.checked;
+    updateMuteStatus(isMuted);
+}
+
+// Mettez à jour le statut du mute et les icônes de volume
+function updateMuteStatus(isMuted) {
+    if (isMuted) {
+        chapterSon.pause();
+        chapterSon2.pause();
+        chapterSon3.pause();
+    } else {
+        chapterSon.play();
+        chapterSon2.play();
+        chapterSon3.play();
+    }
+
+    // Enregistrez le statut du mute dans le localStorage
+    localStorage.setItem('isMuted', isMuted);
+
+    // Mettez à jour les icônes de volume
+    updateVolumeIcons();
+}
+
+// Initialisez le mute lors du chargement de la page
+function initializeMute() {
+    // Utilisez le '|| false' pour définir une valeur par défaut de false si 'isMuted' est null
+    const isMuted = localStorage.getItem('isMuted') === 'true' || false;
+    muteCheckbox.checked = isMuted;
+    updateMuteStatus(isMuted);
+    updateVolumeIcons();
+}
+
+// Mettez à jour les icônes de volume
+function updateVolumeIcons() {
+    const isMuted = muteCheckbox.checked;
+    volumeUpIcon.classList.toggle('hidden', isMuted);
+    volumeMuteIcon.classList.toggle('hidden', !isMuted);
+}
+
+
+
+
+// Appelez cette fonction pour initialiser le mute lors du chargement de la page
+initializeMute();
 updateChapterContent("menu");
+
+
+
+
+
+
+
+
+
 
 
 
