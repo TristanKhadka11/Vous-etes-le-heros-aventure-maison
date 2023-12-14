@@ -143,25 +143,20 @@ button:hover {
 .mute-label img {
     margin-left: 5px;
     width: 45px;
-    /* Ajustez la largeur selon vos besoins */
     height: 45px;
-    /* Ajustez la hauteur selon vos besoins */
+
 }
 
-/* Ajoutez ces lignes dans votre code CSS */
 
-/* Ajoutez cette classe pour masquer l'image du son désactivé */
 .volume-icon.hidden {
     display: none;
 }
 
 
-/* Styles pour l'icône de volume activé */
 .mute-label .fa-volume-up {
     display: inline;
 }
 
-/* Styles pour l'icône de volume désactivé */
 #muteCheckbox:checked+.fa-volume-up {
     display: none;
 }
